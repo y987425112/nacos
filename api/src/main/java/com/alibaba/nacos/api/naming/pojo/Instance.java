@@ -145,6 +145,9 @@ public class Instance {
     }
 
     public void setMetadata(Map<String, String> metadata) {
+		if (metadata == null) {
+            metadata = new HashMap<>();
+        }
         this.metadata = metadata;
     }
 
